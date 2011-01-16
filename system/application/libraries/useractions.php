@@ -1,6 +1,6 @@
 <?php
-include('dbfunctions.php');
-include('functions.php');
+require_once ('dbfunctions.php');
+require_once ('functions.php');
 
 class UserActions {
     

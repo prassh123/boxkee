@@ -59,7 +59,7 @@
     <div dojoType="dijit.layout.ContentPane" region="center" id="centerpane">
         <textbox dojoType="dijit.form.TextBox" id="searchField"></textbox>
 		<button dojoType="dijit.form.Button" id="test">
-			Search <script type="dojo/method" event="onClick">jsaction('/codeIgniter/src/boxKee.php/boxkee/actions','getZipcodeStoreInfo',"centercontent");</script>
+			Search <script type="dojo/method" event="onClick">jsaction('/boxkee/src/boxKee.php/boxkee/actions','getZipcodeStoreInfo',"centercontent");</script>
 		</button>
 		<div id="centercontent"></div>
     </div>
