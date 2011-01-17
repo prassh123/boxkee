@@ -14,9 +14,9 @@ class UserActions {
         or die ("Unable to select database.");
     }
 
-    public function actions () {
-        
-        switch ($_REQUEST['mode']) {
+    public function actions ($action) {
+	    
+	    switch ($action) {
 
         case 'login':
 	        isLoginAccepted($_GET['user_email'],$_GET['user_password']);
@@ -54,7 +54,6 @@ class UserActions {
         	break;
 	
         case 'getZipcodeStoreInfo':
-            error_log ("came here to getZipcodeStoreInfo");
 	        getZipcodeStoreInfo($_REQUEST['store_zipcode'],array('store_name'));
         	break;		
 

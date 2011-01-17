@@ -8,8 +8,13 @@ class BoxKee extends Controller {
 	}
 	
 	function actions() {
+		
     	$this->load->library('useractions');
-        $this->useractions->actions();
+        $action = $this->uri->segment(3);
+        
+        if (FALSE !== $action) {
+            $this->useractions->actions($action);
+        }
 	}
 	
 	function boxKeeView()
