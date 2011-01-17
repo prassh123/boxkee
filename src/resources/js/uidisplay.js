@@ -36,7 +36,7 @@
 		});
 		var getInboxButton = new dijit.form.Button({}, "getInboxNode");
 		dojo.connect(getInboxButton, "onClick", function(e){
-			jsaction('/boxkee/src/boxKee.php/boxkee/actions','getZipcodeStoreInfo',"inboxPaneNode");
+			jsaction('/boxkee/src/boxKee.php/boxkee/actions/getZipcodeStoreInfo','',"inboxPaneNode");
 		});		
 		
 	});

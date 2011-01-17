@@ -5,6 +5,7 @@ class BoxKee extends Controller {
 	function BoxKee()
 	{
 		parent::Controller();	
+		$this->load->database();
 	}
 	
 	function actions() {

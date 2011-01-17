@@ -8,10 +8,10 @@ class UserActions {
 
    public function __construct() {
         
-        mysql_connect("localhost", "uroot", "")
-        or die ("Unable to connect to server.");
-        mysql_select_db($this->db)
-        or die ("Unable to select database.");
+        //mysql_connect("localhost", "uroot", "")
+        //or die ("Unable to connect to server.");
+        //mysql_select_db($this->db)
+        //or die ("Unable to select database.");
     }
 
     public function actions ($action) {
